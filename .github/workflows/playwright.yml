@@ -1,0 +1,60 @@
+name: Playwright Tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    name: Run Playwright Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: 🧰 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 📦 Install Dependencies
+        run: npm ci
+
+      - name: 📥 Install Playwright Browsers
+        run: npx playwright install --with-deps
+
+      - name: ▶️ Run Playwright Tests
+        run: npx playwright test
+
+      - name: 📤 Upload Playwright Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: playwright-report/
+          
+      - name: 📤 Upload Trace Files
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: trace-archives
+          path: test-results/
+
+# ------ Optional Allure Report Integration (Uncomment if using Allure) ------
+#   - name: ⬇️ Install Allure Commandline
+#     run: |
+#       npm install -g allure-commandline --save-dev
+# 
+#   - name: 🧪 Generate Allure Report
+#     run: |
+#       allure generate allure-results --clean -o allure-report
+# 
+#   - name: 📤 Upload Allure Report
+#     if: always()
+#     uses: actions/upload-artifact@v4
+#     with:
+#       name: allure-report
+#       path: allure-report/

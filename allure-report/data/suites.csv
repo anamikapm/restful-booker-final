@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","5301","Create Booking via API and validate via UI","chromium","Wed Jul 23 14:29:20 IST 2025","passed","Wed Jul 23 14:29:25 IST 2025","","combined\api_ui_e2e.spec.ts","",""
+"","12011","Full E2E: API booking and UI form scroll","chromium","Mon Jul 28 14:50:09 IST 2025","passed","Mon Jul 28 14:50:21 IST 2025","","combined\fullE2E.spec.ts","",""
+"","31372","Create Booking via API and validate via UI","firefox","Tue Jul 22 15:33:21 IST 2025","broken","Tue Jul 22 15:33:52 IST 2025","","combined\api_ui_e2e.spec.ts","",""
+"","2301","Create booking for Anamika Mohan","chromium","Wed Jul 23 13:53:58 IST 2025","passed","Wed Jul 23 13:54:01 IST 2025","Booking API","api\createBooking.spec.ts","",""

@@ -1,0 +1,45 @@
+# Page snapshot
+
+```yaml
+- heading "Welcome to Restful-Booker" [level=1]
+- paragraph:
+  - text: An API playground created by
+  - link "Mark Winteringham":
+    - /url: http://mwtestconsultancy.co.uk/
+  - text: for those wanting to learn more about API testing and tools
+- paragraph:
+  - link "@2bittester":
+    - /url: https://twitter.com/2bittester
+  - text: "|"
+  - link "Website":
+    - /url: http://mwtestconsultancy.co.uk/
+  - text: "|"
+  - link "Code":
+    - /url: https://github.com/mwinteringham/restful-booker
+  - text: "|"
+  - link "API Docs":
+    - /url: /apidoc/index.html
+- paragraph:
+  - text: Welcome to Restful-booker an API that you can use to learn more about API Testing or try out API testing tools against. Restful-booker is a Create Read Update Delete Web API that comes with authentication features and loaded with a bunch of bugs for you to explore. The API comes pre-loaded with 10 records for you to work with and resets itself every 10 minutes back to that default state. Restful-booker also comes with
+  - link "detailed API documentation":
+    - /url: /apidoc/index.html
+  - text: to help get you started with your API testing straight away.
+- heading "Support me and Restful-Booker" [level=2]
+- paragraph:
+  - text: Restful-booker is a free to use API for practising testing, but if you enjoy using this API please consider supporting me by purchasing one of my books. Alternatively you can support
+  - link "Ministry of Testing":
+    - /url: https://www.ministryoftesting.com/go-pro?utm_medium=web&utm_source=restful-booker
+  - text: who host this API by going Pro.
+- heading "Buy AI-Assisted Testing" [level=4]
+- link "Testing Web APIs":
+  - /url: https://bit.ly/ai-testing
+  - img "Testing Web APIs"
+- heading "Buy Testing Web APIs" [level=4]
+- link "Testing Web APIs":
+  - /url: https://bit.ly/testwebapis
+  - img "Testing Web APIs"
+- heading "Go Pro with Ministry of Testing" [level=4]
+- link "Boost your learning, go Pro":
+  - /url: https://www.ministryoftesting.com/go-pro?utm_medium=web&utm_source=restful-booker
+  - img "Boost your learning, go Pro"
+```
