@@ -16,5 +16,6 @@ test('Fetch a booking by ID', async ({ request }) => {
   const getRes = await request.get(`/booking/${bookingId}`);
   expect(getRes.status()).toBe(200);
   const data = await getRes.json();
-  expect(data.firstname).toBe('FetchMe');
+  console.log(expect(data.firstname).toBe('FetchMe'));
+
 });
