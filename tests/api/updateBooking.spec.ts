@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test('Update a booking record', async ({ request }) => {
+  // Step 1: Create Booking
   const createRes = await request.post('/booking', {
     data: {
       firstname: 'Anamika',
@@ -13,9 +14,20 @@ test('Update a booking record', async ({ request }) => {
   });
   const bookingId = (await createRes.json()).bookingid;
 
+  // Step 2: Get a valid token
+  const authRes = await request.post('/auth', {
+    data: {
+      username: 'admin',
+      password: 'password123'
+    }
+  });
+  const token = (await authRes.json()).token;
+
+  // Step 3: Update the booking with valid token
   const updateRes = await request.put(`/booking/${bookingId}`, {
     headers: {
-      Cookie: 'token=abc123' // Replace with real token if needed
+      Cookie: `token=${token}`,           // ✅ Use real token
+      'Content-Type': 'application/json'  // ✅ Required header
     },
     data: {
       firstname: 'Updated',
@@ -26,5 +38,7 @@ test('Update a booking record', async ({ request }) => {
       additionalneeds: 'Dinner'
     }
   });
+
+  // Step 4: Assert the update status
   expect(updateRes.status()).toBe(200);
 });

@@ -1,0 +1,1 @@
+C:\Users\AnamikaMohanan\Playwright_Projects\restful-booker-final\tests\ui\visualCheck.spec.ts-snapshots\homepage-chromium-win32.png does not match, writing actual.

@@ -1,0 +1,235 @@
+# Page snapshot
+
+```yaml
+- navigation:
+  - link "Shady Meadows B&B":
+    - /url: /
+  - list:
+    - listitem:
+      - link "Rooms":
+        - /url: /#rooms
+    - listitem:
+      - link "Booking":
+        - /url: /#booking
+    - listitem:
+      - link "Amenities":
+        - /url: /#amenities
+    - listitem:
+      - link "Location":
+        - /url: /#location
+    - listitem:
+      - link "Contact":
+        - /url: /#contact
+    - listitem:
+      - link "Admin":
+        - /url: /admin
+- navigation "breadcrumb":
+  - list:
+    - listitem:
+      - link "Home":
+        - /url: /
+    - listitem:
+      - text: /
+      - link "Rooms":
+        - /url: "#"
+    - listitem: / Single Room
+- heading "Single Room" [level=1]
+- text: Accessible  Max 2 Guests
+- img "Room Image"
+- heading "Room Description" [level=2]
+- paragraph: Aenean porttitor mauris sit amet lacinia molestie. In posuere accumsan aliquet. Maecenas sit amet nisl massa. Interdum et malesuada fames ac ante.
+- heading "Room Features" [level=2]
+- text:  TV  WiFi  Safe
+- heading "Room Policies" [level=2]
+- heading "Check-in & Check-out" [level=3]
+- list:
+  - listitem:
+    - text: 
+    - strong: "Check-in:"
+    - text: 3:00 PM - 8:00 PM
+  - listitem:
+    - text: 
+    - strong: "Check-out:"
+    - text: By 11:00 AM
+  - listitem:
+    - text: 
+    - strong: "Early/Late:"
+    - text: By arrangement
+- heading "House Rules" [level=3]
+- list:
+  - listitem:  No smoking
+  - listitem:  No parties or events
+  - listitem:  Pets allowed (restrictions apply)
+- heading "Book This Room" [level=2]
+- text: £100 per night
+- button "Today"
+- button "Back"
+- button "Next"
+- text: August 2025
+- table "Month View":
+  - row "Sun Mon Tue Wed Thu Fri Sat":
+    - columnheader "Sun"
+    - columnheader "Mon"
+    - columnheader "Tue"
+    - columnheader "Wed"
+    - columnheader "Thu"
+    - columnheader "Fri"
+    - columnheader "Sat"
+  - rowgroup:
+    - row "27 28 29 30 31 01 02":
+      - cell "27":
+        - button "27"
+      - cell "28":
+        - button "28"
+      - cell "29":
+        - button "29"
+      - cell "30":
+        - button "30"
+      - cell "31":
+        - button "31"
+      - cell "01":
+        - button "01"
+      - cell "02":
+        - button "02"
+  - rowgroup:
+    - row "03 04 05 06 07 08 09 Selected":
+      - cell "03":
+        - button "03"
+      - cell "04":
+        - button "04"
+      - cell "05":
+        - button "05"
+      - cell "06":
+        - button "06"
+      - cell "07":
+        - button "07"
+      - cell "08":
+        - button "08"
+      - cell "09":
+        - button "09"
+      - text: Selected
+  - rowgroup:
+    - row "10 11 12 13 14 15 16":
+      - cell "10":
+        - button "10"
+      - cell "11":
+        - button "11"
+      - cell "12":
+        - button "12"
+      - cell "13":
+        - button "13"
+      - cell "14":
+        - button "14"
+      - cell "15":
+        - button "15"
+      - cell "16":
+        - button "16"
+  - rowgroup:
+    - row "17 18 19 20 21 22 23":
+      - cell "17":
+        - button "17"
+      - cell "18":
+        - button "18"
+      - cell "19":
+        - button "19"
+      - cell "20":
+        - button "20"
+      - cell "21":
+        - button "21"
+      - cell "22":
+        - button "22"
+      - cell "23":
+        - button "23"
+  - rowgroup:
+    - row "24 25 26 27 28 29 30":
+      - cell "24":
+        - button "24"
+      - cell "25":
+        - button "25"
+      - cell "26":
+        - button "26"
+      - cell "27":
+        - button "27"
+      - cell "28":
+        - button "28"
+      - cell "29":
+        - button "29"
+      - cell "30":
+        - button "30"
+  - rowgroup:
+    - row "31 01 02 03 04 05 06":
+      - cell "31":
+        - button "31"
+      - cell "01":
+        - button "01"
+      - cell "02":
+        - button "02"
+      - cell "03":
+        - button "03"
+      - cell "04":
+        - button "04"
+      - cell "05":
+        - button "05"
+      - cell "06":
+        - button "06"
+- heading "Price Summary" [level=3]
+- text: £100 x 1 nights £100 Cleaning fee £25 Service fee £15
+- separator
+- text: Total £140
+- button "Reserve Now"
+- heading "Similar Rooms You Might Like" [level=2]
+- img "Double"
+- heading "Double" [level=3]
+- text:  2 Guests £150/night
+- paragraph: Vestibulum sollicitudin, lectus ac mollis consequat, lorem orci ultrices tellus, eleifend euismod tortor dui egestas erat. Phasellus et ipsum nisl.
+- link "View Details":
+  - /url: /reservation/2?checkin=2025-08-04&checkout=2025-08-05
+- img "Suite"
+- heading "Suite" [level=3]
+- text:  2 Guests £225/night
+- paragraph: Etiam metus metus, fringilla ac sagittis id, consequat vel neque. Nunc commodo quis nisl nec posuere. Etiam at accumsan ex.
+- link "View Details":
+  - /url: /reservation/3?checkin=2025-08-04&checkout=2025-08-05
+- contentinfo:
+  - heading "Shady Meadows B&B" [level=5]
+  - paragraph: Welcome to Shady Meadows, a delightful Bed & Breakfast nestled in the hills on Newingtonfordburyshire. A place so beautiful you will never want to leave. All our rooms have comfortable beds and we provide breakfast from the locally sourced supermarket. It is a delightful place.
+  - link "":
+    - /url: "#"
+  - link "":
+    - /url: "#"
+  - link "":
+    - /url: "#"
+  - heading "Contact Us" [level=5]
+  - list:
+    - listitem:  Shady Meadows B&B, Shadows valley, Newingtonfordburyshire, Dilbery, N1 1AA
+    - listitem:  012345678901
+    - listitem:  fake@fakeemail.com
+  - heading "Quick Links" [level=5]
+  - list:
+    - listitem:
+      - link "Home":
+        - /url: "#"
+    - listitem:
+      - link "Rooms":
+        - /url: "#"
+    - listitem:
+      - link "Booking":
+        - /url: "#"
+    - listitem:
+      - link "Contact":
+        - /url: "#"
+  - separator
+  - text: restful-booker-platform v2.0 Created by
+  - link "Mark Winteringham":
+    - /url: http://www.mwtestconsultancy.co.uk
+  - text: "- © 2019-25"
+  - link "Cookie-Policy":
+    - /url: /cookie
+  - text: "-"
+  - link "Privacy-Policy":
+    - /url: /privacy
+  - text: "-"
+  - link "Admin panel":
+    - /url: /admin
+- alert
+```
